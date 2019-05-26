@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nifty-controls xmlns="http://nifty-gui.lessvoid.com/nifty-gui" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://nifty-gui.lessvoid.com/nifty-gui ../nifty.xsd">
+    <controlDefinition name="treeMenu" childRootId="#content" controller="de.lessvoid.issues.issue466.Issue466Main">
+        <panel childLayout="horizontal">
+            <panel childLayout="center">
+                <control name="label" text="$caption">
+                    <effect>
+                        <onClick name="nop" onStartEffect="onClickStart()" onEndEffect="onClickEnd()"/>
+                        <onHover name="nop" onStartEffect="onHoverStart()" onEndEffect="onHoverEnd()"/>
+                    </effect>
+                </control>
+            </panel>
+            <panel id="#content" childLayout="vertical" height="23px"/>
+        </panel>
+    </controlDefinition>
+</nifty-controls>
